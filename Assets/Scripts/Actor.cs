@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Actor {
+public abstract class Actor : MonoBehaviour {
 
-    public GameObject gameObject;
     public Vector2Int location;
 
 }

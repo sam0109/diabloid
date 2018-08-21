@@ -31,6 +31,9 @@ public class ActorManager : MonoBehaviour {
 
     public int mapWidth, mapHeight;
 
+    List<Actor> actors = new List<Actor>();
+    List<List<Actor>> actorLocations = new List<List<Actor>>();
+
 	void Start () {
         InitializeGameboard();
 	}
@@ -96,7 +99,4 @@ public class ActorManager : MonoBehaviour {
         Debug.Assert(loc.x < mapWidth);
         Debug.Assert(loc.y < mapHeight);
     }
-	
-    List<Actor> actors;
-    List<List<Actor>> actorLocations;
 }
